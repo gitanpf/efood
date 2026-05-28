@@ -6,7 +6,6 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-image: url(${hero});
   background-size: cover;
   background-position: center;
   max-width: 100%;
