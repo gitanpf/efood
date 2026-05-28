@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import hero from '../../assets/image/hero.png'
 
 export const Container = styled.div`
+  background-image: url(${hero});
   display: flex;
   align-items: center;
   flex-direction: column;

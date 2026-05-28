@@ -20,12 +20,12 @@ export const Logo = styled.div`
 export const Links = styled.div`
   align-items: center;
   display: flex;
+  gap: 8px;
   justify-content: center;
   flex-direction: row;
   img {
     width: 24px;
     height: 24px;
-    gap: 8px;
     margin-top: 32px;
   }
 `

@@ -15,11 +15,16 @@ import {
 
 import restaurante from '../../assets/image/restaurante.png'
 
+const StarFilled = AiFillStar as React.ComponentType<any>
+const StarOutline = AiOutlineStar as React.ComponentType<any>
+
 const CardRestaurante = () => {
   const [favorito, setFavorito] = useState(false)
+
   const alternaFavorito = () => {
     setFavorito(!favorito)
   }
+
   return (
     <Card>
       <ImagemContainer>
@@ -31,8 +36,7 @@ const CardRestaurante = () => {
           <Nota>
             4.9{' '}
             <BotaoFavoritar onClick={alternaFavorito} type="button">
-              {favorito ? (
-                <><AiFillStar /></> ) : ( <><AiOutlineStar /></>)}
+              {favorito ? <StarFilled /> : <StarOutline />}
             </BotaoFavoritar>
           </Nota>
         </LinhaTitulo>

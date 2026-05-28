@@ -1,11 +1,16 @@
-import { Container } from './styles'
+import { NavLink } from 'react-router-dom'
+import { Container, Links } from './styles'
 import logo from '../../assets/image/logo.png'
 
-export const HeaderRestaurante = () => (
+const HeaderRestaurante = () => (
   <Container>
-    <a href="#">Restaurante</a>
+    <Links>
+      <NavLink to="/">Restaurante</NavLink>
+    </Links>
     <img src={logo} alt="Logo efood" />
-    <a href="#">0 produto(s) no carrinho</a>
+    <Links>
+      <NavLink to="/carrinho">0 produto(s) no carrinho</NavLink>
+    </Links>
   </Container>
 )
 

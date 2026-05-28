@@ -1,16 +1,19 @@
-import { GlobalCSS } from './styles'
-import Hero from './components/Hero'
-import Lista from './components/Lista'
-import Footer from './components/Footer'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import Perfil from './pages/Perfil'
+import CardapioPage from './pages/CardapioPage'
+import { Pagina404 } from './pages/Pagina404'
 
 function App() {
   return (
-    <>
-      <GlobalCSS />
-      <Hero />
-      <Lista />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/cardapio" element={<CardapioPage />} />
+        <Route path="/perfil" element={<Perfil />} />
+        <Route path="*" element={<Pagina404 />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
