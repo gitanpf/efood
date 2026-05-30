@@ -33,6 +33,15 @@ export const Links = styled.div`
 export const Texto = styled.div`
   font-size: 10px;
   text-align: center;
-  margin-top: 80px;
   margin-bottom: 40px;
+  max-width: 480px;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  p {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    color: ${cores.fontBody};
+  }
 `

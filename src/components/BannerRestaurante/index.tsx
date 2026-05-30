@@ -1,10 +1,19 @@
-import { Container, TipoRestaurante, NomeRestaurante } from './styles'
+import {
+  BannerImage,
+  Overlay,
+  TipoRestaurante,
+  NomeRestaurante
+} from './styles'
 
 const BannerRestaurante = () => (
-  <Container>
-    <TipoRestaurante>Italiana</TipoRestaurante>
-    <NomeRestaurante>La Dolce Vita Trattoria</NomeRestaurante>
-  </Container>
+  <BannerImage>
+    <Overlay>
+      <div className="container">
+        <TipoRestaurante>Italiana</TipoRestaurante>
+        <NomeRestaurante>La Dolce Vita Trattoria</NomeRestaurante>
+      </div>
+    </Overlay>
+  </BannerImage>
 )
 
 export default BannerRestaurante

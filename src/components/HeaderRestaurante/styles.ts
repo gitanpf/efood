@@ -1,14 +1,36 @@
 import styled from 'styled-components'
 import { cores } from '../../styles'
+import hero from '../../assets/image/hero.png'
 
-export const Container = styled.nav`
-  display: flex;
-  justify-content: space-between;
-  font-weight: bold;
-  font-size: 18px;
-`
+export const HeaderContainer = styled.header`
+  background-image: url(${hero});
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0;
 
-export const Links = styled.a`
-  color: ${cores.fontBody};
-  text-decoration: none;
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: ${cores.fontBody};
+    font-weight: 900;
+    font-size: 18px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  img {
+    height: auto;
+  }
 `

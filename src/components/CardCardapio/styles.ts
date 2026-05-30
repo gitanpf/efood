@@ -2,24 +2,26 @@ import styled from 'styled-components'
 import { cores } from '../../styles'
 
 export const Card = styled.div`
-  display: flex;
   max-width: 320px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
   background-color: ${cores.fontBody};
-  border: solid 1px ${cores.fontBody};
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 `
 
 export const Imagem = styled.img`
-  max-width: 304px;
-  height: auto;
+  width: 100%;  
+  height: 167px;  
+  object-fit: cover; 
 `
 
 export const Titulo = styled.h2`
   font-size: 16px;
-  font-weight: bold;
-  color: ${cores.backgroundFooter};
+  font-weight: 900;
+  color: ${cores.backgroundFooter}; 
+  margin: 8px 0;              
 `
 
 export const Descricao = styled.p`
@@ -27,11 +29,20 @@ export const Descricao = styled.p`
   line-height: 22px;
   font-weight: 400;
   color: ${cores.backgroundFooter};
+  margin-bottom: 8px;
 `
 
 export const Botao = styled.button`
-  max-width: 304px;
-  height: 24px;
+  width: 100%;      
+  padding: 4px 0;   
   background-color: ${cores.backgroundFooter};
-  align-text: center;
+  color: ${cores.fontBody};
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  
+  &:hover {
+    opacity: 0.9; 
+  }
 `
