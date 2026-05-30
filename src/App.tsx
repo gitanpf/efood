@@ -11,7 +11,7 @@ function App() {
       <GlobalCSS />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/efood" element={<Home />} />
           <Route path="/cardapio" element={<CardapioPage />} />
           <Route path="/perfil" element={<Perfil />} />
           <Route path="*" element={<Pagina404 />} />
