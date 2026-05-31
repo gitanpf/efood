@@ -1,22 +1,12 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home'
-import Perfil from './pages/Perfil'
-import CardapioPage from './pages/CardapioPage'
-import { Pagina404 } from './pages/Pagina404'
+import { RouterProvider } from 'react-router-dom'
+import { router } from './routes'
 import { GlobalCSS } from './styles'
 
 function App() {
   return (
     <>
       <GlobalCSS />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/efood" element={<Home />} />
-          <Route path="/cardapio" element={<CardapioPage />} />
-          <Route path="/perfil" element={<Perfil />} />
-          <Route path="*" element={<Pagina404 />} />
-        </Routes>
-      </BrowserRouter>
+      <RouterProvider router={router} />
     </>
   )
 }

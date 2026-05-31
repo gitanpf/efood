@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { AiOutlineStar, AiFillStar } from 'react-icons/ai'
+// 1. Importe o Link do react-router-dom
+import { Link } from 'react-router-dom'
 
 import {
   Card,
@@ -44,7 +46,9 @@ const CardRestaurante = () => {
           Peça já o melhor da culinária japonesa no conforto da sua casa! Sushis
           frescos, sashimis deliciosos e pratos quentes irresistíveis.
         </Descricao>
-        <Botao href="#">Saiba mais</Botao>
+        <Botao as={Link} to="/cardapio">
+          Saiba mais
+        </Botao>
       </InfoContainer>
     </Card>
   )
